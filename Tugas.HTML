@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Motor</title>
+</head>
+<body>
+    <h2>Form Informasi Motor</h2>
+    <form action="proses_form.php" method="post">
+        <label for="jenis_motor">Jenis Motor:</label>
+        <select name="jenis_motor" id="jenis_motor">
+            <option value="Sport">Sport</option>
+            <option value="Matic">Matic</option>
+            <option value="Cub">Cub</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Custom">Custom</option>
+        </select><br><br>
+
+        <label for="fitur_motor">Fitur Motor:</label>
+        <select name="fitur_motor[]" id="fitur_motor" multiple>
+            <option value="Anti-lock Braking System (ABS)">Anti-lock Braking System (ABS)</option>
+            <option value="Traction Control System (TCS)">Traction Control System (TCS)</option>
+            <option value="Electronic Fuel Injection (EFI)">Electronic Fuel Injection (EFI)</option>
+            <option value="Tubeless Tires">Tubeless Tires</option>
+            <option value="LED Headlights">LED Headlights</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
